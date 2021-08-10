@@ -1,17 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
+:root {
+  /* primary */
+  --veryDarklue: hsl(233, 47%, 7%);
+  --darkDesaturatedBlue: hsl(244, 38%, 16%);
+  --softViolet: hsl(277, 64%, 61%);
 
-html{
+  /* natural */
+  --White: hsl(0, 0%, 100%);
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
   font-size: 15px;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box ;
+  box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   font-family: 'Lexend Deca', sans-serif;
 }
+
+body{
+  background: var(--veryDarklue);
+  width: 100vw;
+  height: 100vh;
+  color: var(--White);
+}
+
+.container{
+  margin: 20px;
+}
+
+.top-img{
+    height: 180px;
+    width: 245px;
+    background:var(--softViolet);
+    overflow: hidden;
+}
+
+.header-img{
+  width: 250px;
+      background:var(--softViolet);
+    overflow: hidden;
+  object-fit: contain;
+  opacity: 0.4;
+}
+
+
+
+
+
+
+
 /* .attribution */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
