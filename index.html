@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Stats preview card component</title>
 
-  <title>Frontend Mentor | Stats preview card component</title>
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
-
-<body>
-  <div class="container">
-    <div class="top-img">
-      <img src="./images/image-header-mobile.jpg" alt="image-header-mobile" class="header-img">
-    </div>
-    <div class="all-info">
-      <div class="top-info">
-        <h1>Get <span>insights</span> that help your business grow.</h1>
-        <P> Discover the benefits of data analytics and make better decisions regarding revenue, customer experience,
-          and overall efficiency.</P>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <article class="card">
+      <div class="card__img-container">
+        <img
+          class="img__mobile"
+          src="./images/image-header-mobile.jpg"
+          alt="Buisness women working around a table"
+        />
+        <img
+          class="img__desktop"
+          src="./images/image-header-desktop.jpg"
+          alt="Buisness women working around a table"
+        />
       </div>
-      <div class="bottom-info">
-        <div class="datas">
-          <div class="data-info">
-            <h3>10k+</h3>
-            <p>companies</p>
-          </div>
-          <div class="data-info">
-            <h3>314</h3>
-            <p>templates</p>
-          </div>
-          <div class="data-info">
-            <h3>12m+</h3>
-            <p>queries</p>
-          </div>
-        </div>
+      <div class="card__content-container">
+        <header>
+          <h2 class="content__title">
+            Get
+            <span class="content__title--highlight"> insights</span>
+            that help your business grow.
+          </h2>
+          <p class="content__description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </header>
+
+        <ul class="content__rating-list-container">
+          <li class="rating-list__item">
+            10k+ <br />
+            <span class="rating-list__item--transparent">companies</span>
+          </li>
+          <li class="rating-list__item">
+            314 <br />
+            <span class="rating-list__item--transparent">templates</span>
+          </li>
+          <li class="rating-list__item">
+            12M+ <br />
+            <span class="rating-list__item--transparent">queries</span>
+          </li>
+        </ul>
       </div>
-    </div>
+    </article>
 
-  </div>
-
-  <!-- Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries -->
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-</body>
-
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io/solutions">FrontEnd Mentor</a>
+        Coded by
+        <a href=""
+          >Mayur</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
